@@ -19,7 +19,6 @@ def details():
 def offline():
     return app.send_static_file('offline.html')
 
-
 @app.route('/service-worker.js')
 def sw():
     return app.send_static_file('service-worker.js')
