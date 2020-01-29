@@ -14,16 +14,11 @@ def view(ser,start,end):
 	collect['t_0']=datetime.datetime.now() - datetime.timedelta(hours = 1)
 	result =mv_sense_controller.get_device_camera_analytics_overview(collect)
 	return result['entrances']
-"""
-from flask import Flask, jsonify, render_template
 
-app = Flask(__name__)
-
-
-@app.route('/')
-def home():
-    return render_template('index.html',result['entrances'])
-
-if __name__ == '__main__':
-    app.run(debug=True, host="0.0.0.0")
-"""
+def check_number(num):
+	if(num==view('serial1','2020-01-29 11:49:44.313206','2020-01-29 12:49:44.313206')):
+		pass
+	elif(num>view('serial1','2020-01-29 11:49:44.313206','2020-01-29 12:49:44.313206')):
+		pass
+	else:
+		pass
