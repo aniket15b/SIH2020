@@ -22,7 +22,7 @@ def sw():
 
 @app.errorhandler(404)
 def not_found(e):
-    return app.send_static_file('404.html')
+    return render_template('404.html')
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0")
