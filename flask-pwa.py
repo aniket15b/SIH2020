@@ -1,8 +1,8 @@
 from flask import Flask, jsonify, render_template
 
-from functions.live import live
-from functions.number_of_students import view
-from functions.past_records import past
+# from functions.live import live
+# from functions.number_of_students import view
+# from functions.past_records import past
 
 app = Flask(__name__)
 
