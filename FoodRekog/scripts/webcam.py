@@ -90,7 +90,7 @@ def run_model(img, graph):
 cap = cv2.VideoCapture(0)  # Change only if you have more than one webcams
 # cap.set(3,224)
 # cap.set(4,224)
-graph = load_graph('/home/Techno-Disaster/tensorflow-for-poets-2/tf_files/retrained_graph.pb')
+graph = load_graph('/home/Techno-Disaster/FoodRekog/tf_files/retrained_graph.pb')
 while True:
     ret, frame = cap.read()
     frame = cv2.resize(frame, (224, 224))
