@@ -28,5 +28,9 @@ def sw():
 def not_found(e):
     return render_template('404.html')
 
+@app.route('/test')
+def test():
+    return render_template('test.html', text = "Test Text")
+
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0")
